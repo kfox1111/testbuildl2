@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# $IMAGE_NAME var is injected into the build so the tag is correct.
+
+echo "Build hook running"
+docker build --build-arg image=kfox1111/buildl1 -t $IMAGE_NAME .
